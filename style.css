@@ -1,0 +1,255 @@
+/* reset browser styles */
+      html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          vertical-align: baseline;
+      }
+      article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+          display: block;
+      }
+      body {
+          line-height: 1.2;
+      }
+      ol { 
+          padding-left: 1.4em;
+          list-style: decimal;
+      }
+      ul {
+          padding-left: 1.4em;
+          list-style: square;
+      }
+      table {
+          border-collapse: collapse;
+          border-spacing: 0;
+      }
+      * {
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+      /* end reset browser styles */
+
+      :root {
+          --bright-orange: hsl(31, 77%, 52%);
+          --dark-cyan: hsl(184, 100%, 22%);
+          --very-dark-cyan: hsl(179, 100%, 13%);
+          --transparent-white: hsla(0, 0%, 100%, 0.75);
+          --very-light-gray: hsl(0, 0%, 95%);
+      }
+
+      body{
+          font-size: 15px;
+          background-color: var(--very-light-gray);
+      }
+
+      header{
+        background-color: #00CCCC;
+      }
+
+      header p{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1em;
+      }
+
+      header a{
+        text-decoration: none;
+        color: #001414;
+      }
+
+      header a:hover{
+        color: #EBEBEB;
+        font-weight: 700;
+      }
+
+      main{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          margin-top: -10em;
+      }
+
+      h2{
+          font-family: 'Big Shoulders Display', cursive;
+          font-weight: 700;
+          font-size: 2rem;
+          text-transform: uppercase;
+          color: var(--very-light-gray);
+          margin-bottom: .3em;
+      }
+
+      .logo img{
+          height: 32px;
+      }
+
+      /* Sedans*/
+      div#sedans-card{
+          background-color: var(--bright-orange);
+          height: 390px;
+          flex-basis: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          padding: 1em 0 1em 2em;
+          border-top-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+      }
+
+      .sedans-body{
+          font-family: 'Lexend Deca', sans-serif;
+          font-size: .8rem;
+          font-weight: 400;
+          padding-right: 3.1em;
+          margin-bottom: 3em;
+          color: var(--transparent-white);
+          line-height: 1.6;
+      }
+
+      .sedans-btn{
+          background-color: var(--very-light-gray);
+          color: var(--bright-orange);
+          font-family: 'Lexend Deca', sans-serif;
+          font-weight: 400;
+          border: none;
+          border: 2px solid transparent;
+          border-radius: 30px;
+          padding: .8em 2em;
+      }
+
+      .sedans-btn:hover{
+          background-color: var(--bright-orange);
+          border: 2px solid var(--very-light-gray);
+          color: var(--very-light-gray);
+          cursor: pointer;
+          
+      }
+
+      /*Suvs*/
+      div#suvs-card{
+          background-color: var(--dark-cyan);
+          height: 390px;
+          flex-basis: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          padding: 1em 0 1em 2em;
+      }
+
+      .suvs-body{
+          font-family: 'Lexend Deca', sans-serif;
+          font-size: .8rem;
+          font-weight: 400;
+          padding-right: 3.1em;
+          margin-bottom: 3em;
+          color: var(--transparent-white);
+          line-height: 1.6;
+      }
+
+      .suvs-btn{
+          background-color: var(--very-light-gray);
+          color: var(--dark-cyan);
+          font-family: 'Lexend Deca', sans-serif;
+          font-weight: 400;
+          border: none;
+          border: 2px solid transparent;
+          border-radius: 30px;
+          padding: .8em 2em;
+      }
+
+      .suvs-btn:hover{
+          background-color: var(--dark-cyan);
+          border: 2px solid var(--very-light-gray);
+          color: var(--very-light-gray);
+          cursor: pointer;
+          
+      }
+
+      /*Luxury*/
+      div#luxury-card{
+          background-color: var(--very-dark-cyan);
+          height: 390px;
+          flex-basis: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          padding: 1em 0 1em 2em;
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+      }
+
+      .luxury-body{
+          font-family: 'Lexend Deca', sans-serif;
+          font-size: .8rem;
+          font-weight: 400;
+          padding-right: 3.1em;
+          margin-bottom: 3em;
+          color: var(--transparent-white);
+          line-height: 1.6;
+      }
+
+      .luxury-btn{
+          background-color: var(--very-light-gray);
+          color: var(--very-dark-cyan);
+          font-family: 'Lexend Deca', sans-serif;
+          font-weight: 400;
+          border: none;
+          border: 2px solid transparent;
+          border-radius: 30px;
+          padding: .8em 2em;
+      }
+
+      .luxury-btn:hover{
+          background-color: var(--very-dark-cyan);
+          border: 2px solid var(--very-light-gray);
+          color: var(--very-light-gray);
+          cursor: pointer;
+          
+      }
+
+      /* portrait e-readers, smaller tablets @600 or @640 wide*/
+      @media screen and (max-width: 375px){
+
+          header{
+            margin-bottom: 1em;
+          }
+
+          header a:hover{
+            color: #EBEBEB;
+            font-weight: 700;
+          }
+
+          main{
+              display: block;
+              margin: 0 auto;
+              width: 90vw;
+              border-radius: 7px;
+          }
+
+          div#sedans-card{
+              border-radius: 0;
+              width: 90vw;
+              border-top-left-radius: 7px;
+              border-top-right-radius: 7px;
+          }
+
+          div#suvs-card{
+              width: 90vw;
+          }
+
+          div#luxury-card{
+              border-radius: 0;
+              border-bottom-left-radius: 7px;
+              border-bottom-right-radius: 7px;
+              width: 90vw;
+          }
+      }
